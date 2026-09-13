@@ -4,7 +4,11 @@ from openpyxl.styles import Font, PatternFill, Alignment
 from collections import defaultdict
 
 # --- Streamlit Web Interface Setup ---
-st.set_page_config(page_title="Shipment Tag Reviewer", page_icon="📦", layout="centered")
+st.set_page_config(
+    page_title="Shipment Tag Reviewer",
+    page_icon="📦",
+    layout="centered"
+)
 
 st.title("📦 Shipment Tag & Order Reviewer")
 st.write("Upload your PDF airwaybill and Excel order sheet below to generate the reconciliation report.")
